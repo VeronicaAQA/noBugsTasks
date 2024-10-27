@@ -3,6 +3,7 @@ package org.example;
 import org.example.task1.Book;
 import org.example.task2.Student;
 import org.example.task3.Point;
+import org.example.task4.Clock;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +36,13 @@ public class Main {
         point1.moveLeft();
         point1.moveRight();
 
+        //task 4 - "часы"
+        Clock clock1 = new Clock();
+        clock1.setHour(6);
+        clock1.setMin(59);
+        clock1.setSec(59);
+        clock1.tick();
+        clock1.readTime();
     }
 }
 
